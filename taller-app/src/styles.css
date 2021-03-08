@@ -103,11 +103,10 @@ h7 {
 .results-div {
   font-size: 12px;
   overflow-y: auto;
+  height: 450px
   
 }
-.results-div table{
-  height: 200px
-}
+
 .resultsButton {
   margin-left: 5px;
   color: rgb(116, 114, 114);
@@ -233,6 +232,7 @@ header {
   box-shadow: blue;
   border-bottom: rgb(253, 101, 0) 0.5px solid;
   position: sticky;
+  top: 0;
 }
 
 #headerButton {
