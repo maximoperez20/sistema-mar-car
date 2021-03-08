@@ -1,0 +1,139 @@
+Customers.jsx
+<div className="container margen-izq busqueda-form">
+      <div className="row">
+        <div className="col-6">
+          <form id="find-client">
+            <label className="h5 block">Buscar Cliente por Dominio</label>
+            <input id="searchByDominio" className="inline"></input>
+            <button onClick={handleSearchButton} className="btn inline">
+              <FontAwesomeIcon
+                icon="search"
+                style={{ width: "25px", height: "25px" }}
+              />
+            </button>
+
+            <label className="h5 block">Buscar Cliente por Nombre</label>
+            <input id="searchByClient" className="inline"></input>
+            <button onClick={handleSearchButton} className="btn inline">
+              <FontAwesomeIcon
+                icon="search"
+                style={{ width: "25px", height: "25px" }}
+              />
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    Customer.jsx
+        <tr>
+      <td>{props.age}</td>
+      <td>d</td>
+      <td>OXO159</td>
+      <td>SIENA EL 1.4</td>
+      <td>16615615</td>
+      <td>4481515</td>
+      <td>1566</td>
+      <td>Cagliero 252</td>
+      <td className="">
+        <button type="button" className="btn btn-outline-primary resultsButton">
+          <FontAwesomeIcon icon="eye" />
+        </button>
+        <button type="button" className="btn btn-outline-success resultsButton">
+          <FontAwesomeIcon icon="edit" />
+        </button>
+        <button type="button" className="btn btn-outline-danger resultsButton">
+          <FontAwesomeIcon icon="trash" />
+        </button>
+      </td>
+    </tr>
+
+
+
+        id=""
+              lName=""
+              fName=""
+              domicilio=""
+              car=""
+              dominio=""
+              motorNumber=""
+              chasisNumber=""
+              cedulaNumber=""
+
+              id={item.id}
+              lName={item.lName}
+              fName={item.FName}
+              domicilio={item.domicilio}
+              car={item.car}
+              dominio={item.dominio}
+              motorNumber={item.motorNumber}
+              chasisNumber={item.chasisNumber}
+              cedulaNumber={item.cedulaNumber}
+
+Customers.jsx
+              <>
+      {props.tasks.map((task, index) => (
+        <Customer key={index} task={task} />
+      ))}
+    </>
+
+
+{props.name}
+{props.tel}
+{props.dni}
+{props.domicilio}
+{props.car}
+{props.dominio}
+{props.cedula}
+{props.chasis}
+{props.motor}
+
+
+
+
+//WORKS CARDDDDDDDDDDDDDDDDDDDDDD***********
+<table
+                style={{ width: "100%", fontSize: "14px" }}
+                id="works-table"
+                className="nostyle"
+              >
+                <tr>
+                  <td>
+                    Razón Social: <h7>{props.name}</h7>
+                  </td>
+                  <td>
+                    Vehículo: <h7>{props.car}</h7>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Teléfono: <h7>{props.tel}</h7>
+                  </td>
+                  <td>
+                    Dominio: <h7>{props.dominio}</h7>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    DNI: <h7>{props.dni}</h7>
+                  </td>
+                  <td>
+                    N° Chasis: <h7>{props.chasis}</h7>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Domicilio: <h7>{props.domicilio}</h7>
+                  </td>
+                  <td>
+                    N° Motor:<h7> {props.motor}</h7>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    N° Cédula: <h7>{props.cedula}</h7>
+                  </td>
+                  <td></td>
+                </tr>
+              </table>

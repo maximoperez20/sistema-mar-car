@@ -1,0 +1,39 @@
+//CODIGO PARA PASAR LOS DATOS DE TRABAJOS DE CADA CLIENTE A UN ARRAY DENTRO DEL OBJETO CUSTOMER
+//app.js
+//PASS THE WORKS TO THE RESPECTIVE CUSTOMER FUNCTION
+
+const worksSchema = {
+ id: Number,
+ customer_id: Number,
+ fecha: String,
+trabajo: String,
+};
+
+const Works = mongoose.model("work", worksSchema);
+
+app.get("/passdatanow", (req, res) => {
+  //busco todos los trabajos
+  Works.find({}, function (err, worksArray) {
+    //busco todos los customers
+    Customer.find({}, (err, customersArray) => {
+      customersArray.forEach((customer) => {
+        let myTemporaryWorkArray = [];
+        for (let i = 0; i < worksArray.length; i++) {
+          if (customer.id === worksArray[i].customer_id) {
+            myTemporaryWorkArray.push(worksArray[i]);
+          }
+        }
+        //Update
+        Customer.updateOne(
+          { id: customer.id },
+          { works: myTemporaryWorkArray },
+          function (err, result) {
+            if (err) {
+              console.log(err);
+            }
+          }
+        );
+      });
+    });
+  });
+});

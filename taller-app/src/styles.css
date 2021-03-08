@@ -1,0 +1,338 @@
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/********************************************** GLOBAL HTML ELEMENTS **************************************/
+input {
+  display: block;
+  margin: 0 0 1rem;
+}
+body {
+  background-color: rgb(242, 241, 255);
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  overflow-y: scroll;
+}
+h6 {
+  font-weight: bold;
+}
+h7 {
+  font-weight: normal;
+}
+
+/********************************************* BOOTSTRAP CHANGES  *****************************************/
+#results-table tr:hover {
+  background-color: rgb(253, 199, 162);
+}
+.results-table-head {
+  background: white;
+}
+
+#results-table-fixed-header {
+  margin-bottom: 0px !important;
+}
+
+/* This is what we are focused on */
+.table-wrapper {
+  height: 400px;
+  overflow-y: scroll;
+  flex-grow: 1;
+  border: brown;
+  height: 80%;
+  margin: 0 auto;
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  margin-bottom: 0px !important;
+}
+.table-wrapper tr th {
+  position: sticky;
+  top: 0px;
+}
+
+/********************************************************* MAIN SCREEN  *************************************************/
+.main-div {
+  text-align: center;
+  margin-top: 10%;
+}
+.main-button {
+  width: 200px;
+  height: 200px;
+  margin: 0 20px;
+  border-radius: 2rem;
+}
+.sec-div {
+  text-align: center;
+  margin-top: 20px;
+}
+.sec-button {
+  text-align: center;
+  width: 440px;
+  border-radius: 1rem;
+}
+
+/**************************************** PANTALLA BUSCAR CLIENTE **************************************************/
+
+#main-content {
+  padding-top: 10px;
+}
+.busqueda-form {
+  width: 100%;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+.busqueda-form input {
+  width: 240px;
+  height: 30px;
+  margin-left: 10px;
+}
+.inline {
+  display: inline;
+}
+.block {
+  display: block;
+}
+.search-button {
+  margin-right: 50px;
+}
+.col {
+  border: black 0.5px solid;
+}
+.results-div {
+  font-size: 12px;
+  overflow-y: auto;
+  
+}
+.results-div table{
+  height: 200px
+}
+.resultsButton {
+  margin-left: 5px;
+  color: rgb(116, 114, 114);
+  height: 35px;
+}
+.resultsIcon {
+  font-size: 15px;
+  color: rgb(116, 114, 114);
+}
+.results-table-header-row th{
+  position: sticky;
+  overflow: visible;
+  top: -1px;
+  background-color: rgb(223, 218, 218);
+ 
+}
+
+/************************************************ ADD CLIENT  ******************************************/
+.addClientButton {
+  margin: 2rem 1.5rem;
+  letter-spacing: 2rem;
+}
+
+#add-customer-content {
+  margin-top: 20px;
+  padding-top: 20px;
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 2rem;
+  background-color: rgb(233, 241, 255);
+  border: 0.2px solid #c2c1c1;
+  padding: 20px;
+}
+
+/*********************************** EDIT CUSTOMER CARD****************************************/
+.borderless .col {
+  border: none;
+}
+
+#edit-customer-card input {
+  width: 18rem;
+}
+.edit-customer-buttons {
+  position: absolute;
+  bottom: 30px;
+  right: 2rem;
+}
+.edit-customer-buttons button {
+  margin-right: 1rem;
+}
+
+/****************************************************** POP UP  ******************************************/
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup_inner {
+  position: absolute;
+  padding: 1rem;
+  width: 700px;
+  height: 600px;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+  border: groove 1px rgb(49, 24, 0);
+  border-radius: 2px;
+}
+.closeWindowButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 0.1px solid rgb(rgb(85, 1, 1));
+  border-radius: 0;
+}
+/******************************************************** WORKS CARD********************************************************/
+
+.scrollable-works-table {
+  overflow-y: scroll;
+  height: 300px;
+  display: block;
+}
+.scrollable-works-table .columna-work {
+  width: 100%;
+}
+
+/*********************************************************ADD WORKS FORM********************************************************/
+#addWorkButton {
+  position: absolute;
+  top: 262px;
+  right: 135px;
+  width: 110px;
+  height: 72px;
+}
+#addWorksForm input {
+  width: 100px;
+}
+/*********************************************************** HEADER  ******************************************/
+#head {
+  position: fixed;
+  width: 100%;
+}
+#logo {
+  width: 550px;
+  height: 60px;
+  background-image: url("logo4.jpg");
+  background-repeat: no-repeat;
+}
+
+header {
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+  box-shadow: blue;
+  border-bottom: rgb(253, 101, 0) 0.5px solid;
+  position: sticky;
+}
+
+#headerButton {
+  font-size: 1.5rem;
+  color: rgb(252, 101, 31);
+  font-weight: 700;
+  letter-spacing: 8px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#nav-bar-header {
+  border-bottom: solid grey 0.1px;
+}
+#nav-bar-header span {
+  font-size: 1em;
+}
+/********************************************************* LOG IN  *********************************************************/
+.centro {
+  margin: 0 40%;
+}
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  padding: 0 0 1rem;
+  border-bottom: 0.2px solid grey;
+  margin: 1rem 0 2rem;
+}
+.login-main-div {
+  width: 20rem;
+  margin-top: 4rem;
+  padding: 2.3rem;
+  border: blue 1px solid;
+  border-radius: 2rem;
+}
+
+#plus-square-personal {
+  color: rgb(156, 156, 156);
+  width: 17px;
+  height: 17px;
+}
+
+/******************************************** ABOUT **********************************************/
+#about-content {
+  text-align: center;
+}
+#app-name {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+}
+#app-version {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  color: green;
+}
+#app-fecha {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+#app-developer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 11px;
+}
+
+/******************************TABLAS COMO DIV DivTable.com ****************************************/
+.divTable {
+  display: table;
+  width: 100%;
+}
+.divTableRow {
+  display: table-row;
+}
+.divTableHeading {
+  background-color: #eee;
+  display: table-header-group;
+}
+.divTableCell,
+.divTableHead {
+  border: 1px solid #ffffff;
+  display: table-cell;
+  padding: 3px 10px;
+}
+.divTableHeading {
+  background-color: #eee;
+  display: table-header-group;
+  font-weight: bold;
+}
+.divTableFoot {
+  background-color: #eee;
+  display: table-footer-group;
+  font-weight: bold;
+}
+.divTableBody {
+  display: table-row-group;
+}
+/******************************PROBANDO FIXED HEADERS TABLE ****************************************/
+
+.main-close-button{
+  position: fixed;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+}
